@@ -1,0 +1,22 @@
+<div class="container border rounded pt-3">
+  <form [formGroup]="genericForm">
+    <div class="form-group row">
+      <label for="cpf" class="col-sm-2 col-form-label">CPF</label>
+      <div class="col-sm-10">
+        <input
+          type="text"
+          id="cpf"
+          class="form-control"
+          placeholder="000.000.000-00"
+          [mask]="cpfMask.pattern"
+          formControlName="cpf"
+          [ngClass]="{
+            'is-invalid':
+              genericForm.get('cpf').invalid && genericForm.get('cpf').touched
+          }"
+        />
+        <div class="invalid-feedback">CPF inválido.</div>
+      </div>
+    </div>
+  </form>
+</div>
