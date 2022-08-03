@@ -19,7 +19,9 @@
     "@angular/platform-browser": "~10.1.0",
     "@angular/platform-browser-dynamic": "~10.1.0",
     "@angular/router": "~10.1.0",
+    "@brazilian-utils/brazilian-utils": "^1.0.0-rc.12",
     "angular-google-charts": "^2.2.2",
+    "angular2-text-mask": "^9.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
