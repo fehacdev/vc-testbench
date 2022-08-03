@@ -12,7 +12,8 @@
           formControlName="cpf"
           [ngClass]="{
             'is-invalid':
-              genericForm.get('cpf').invalid && genericForm.get('cpf').touched
+              genericForm.get('cpf').invalid && genericForm.get('cpf').touched,
+            'is-valid': genericForm.get('cpf').valid
           }"
         />
         <div class="invalid-feedback">CPF inválido.</div>
